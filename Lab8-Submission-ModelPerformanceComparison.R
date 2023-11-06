@@ -48,6 +48,9 @@ if (require("randomForest")) {
 #This dataset is already included in R
 data("iris")
 
+#Check for any missing values in the dataset
+anyNA(iris)
+
 # STEP 3. The Resamples Function ----
 ## 3.a. Train the Models ----
 # We train the following models, all of which are using 10-fold repeated cross
